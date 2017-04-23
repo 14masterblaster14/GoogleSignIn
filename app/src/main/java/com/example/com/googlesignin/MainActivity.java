@@ -68,9 +68,8 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         GoogleSignInOptions googleSignInOptions = new GoogleSignInOptions.Builder(
                 GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
-                //         .requestScopes(new Scope(Scope.))
+                // .requestScopes(new Scope(Scope.))
                 .build();
-
 
         // Build the GoogleApiClient object
         mGoogleApiClient = new GoogleApiClient.Builder(this)
@@ -98,7 +97,6 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
                 break;
         }
     }
-
 
     private void startSignIn() {
         // TODO: Create sign-in intent and begin auth flow
